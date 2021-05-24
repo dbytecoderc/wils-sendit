@@ -6,7 +6,7 @@
 
 #### Any background context you want to provide?
 
-#### What are the relevant Trello stories?
+#### What are the relevant Pivotal tracker stories?
 
 #### Screenshots (if appropriate)
 
