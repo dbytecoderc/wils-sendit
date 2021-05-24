@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "delivery service",
   "main": "index.js",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },  
   "lint-staged": {
     "*.js": [
       "npm run lint",
