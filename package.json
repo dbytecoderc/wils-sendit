@@ -1,0 +1,62 @@
+{
+  "name": "sendit",
+  "version": "1.0.0",
+  "description": "delivery service",
+  "main": "index.js",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },  
+  "lint-staged": {
+    "*.js": [
+      "npm run lint",
+      "git add --force"
+    ],
+    "*.json": [
+      "prettier --write",
+      "git add --force"
+    ]
+  },
+  "scripts": {
+    "test": "",
+    "lint": "node_modules/eslint/bin/eslint.js src --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dbytecoderc/wils-sendit.git"
+  },
+  "author": "wil's wilson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dbytecoderc/wils-sendit/issues"
+  },
+  "homepage": "https://github.com/dbytecoderc/wils-sendit#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.14.3",
+    "@babel/core": "^7.14.3",
+    "@babel/eslint-parser": "^7.14.3",
+    "@babel/node": "^7.14.2",
+    "@babel/plugin-transform-regenerator": "^7.13.15",
+    "@babel/plugin-transform-runtime": "^7.14.3",
+    "@babel/preset-env": "^7.14.2",
+    "@babel/register": "^7.13.16",
+    "@babel/runtime": "^7.14.0",
+    "babel-plugin-istanbul": "^6.0.0",
+    "chai": "^4.3.4",
+    "eslint": "^7.27.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.23.3",
+    "eslint-plugin-prettier": "^3.4.0",
+    "husky": "^6.0.0",
+    "lint-staged": "^11.0.0",
+    "mocha": "^8.4.0",
+    "nodemon": "^2.0.7",
+    "prettier": "^2.3.0"
+  },
+  "dependencies": {
+    "node": "^16.1.0",
+    "pg": "^8.6.0"
+  }
+}
